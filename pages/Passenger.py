@@ -5,20 +5,12 @@ import requests
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-color: #1C1C1C; /* Very Dark Gray */
+    background-color: #000000; /* Black background */
     opacity: 0.8;
-    background-image: radial-gradient(#D3D3D3 0.5px, #1C1C1C 0.5px); /* Light Gray dots on Very Dark Gray background */
+    background-image: radial-gradient(#ffffff 0.5px, #000000 0.5px); /* White dots on a black background */
     background-size: 60px 60px; /* Size of the dots */
 }
 
-.chat-container {
-    background-color: #333333; /* Slightly lighter Dark Gray */
-    padding: 10px;
-    border-radius: 10px;
-    max-height: 300px;
-    overflow-y: scroll;
-    margin-bottom: 20px;
-}
 
 .chat-message {
     margin-bottom: 20px;
@@ -37,6 +29,17 @@ page_bg_img = """
     color: white;
     text-align: left;
 }
+
+
+[data-testid="stSidebar"] {
+    margin-top: 50px;
+}
+
+
+[data-testid="collapsedControl"] {
+    margin-top: 50px;
+}
+
 </style>
 """
 

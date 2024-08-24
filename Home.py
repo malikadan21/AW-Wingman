@@ -9,6 +9,16 @@ page_bg_img = """
     background-image: radial-gradient(#ffffff 0.5px, #000000 0.5px); /* White dots on a black background */
     background-size: 60px 60px; /* Size of the dots */
 }
+
+[data-testid="stSidebar"] {
+    margin-top: 50px;
+}
+
+
+[data-testid="collapsedControl"] {
+    margin-top: 50px;
+}
+
 </style>
 """
 
