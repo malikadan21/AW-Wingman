@@ -29,16 +29,16 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.title("Airline")
 
-st.sidebar.button("Admin")
-st.sidebar.button("Login")
+st.sidebar.button("Admin Login")
+# st.sidebar.button("Login")
 
 # Sidebar for navigation
 st.sidebar.header("Navigation")
 sidebar_option = st.sidebar.selectbox("Choose an option", ["Search Hotels", "Room Availability"])
 
 if sidebar_option == "Search Hotels":
-    search_query = st.text_input("Search for Hotels")
-
+    # search_query = st.text_input("Search for Hotels")
+    search_query = st.text_input("If you are a passenger, please enter your hotel booking Id you get via Text or email for further detail regarding your and/or your group's allotted stay")
     if search_query:
         st.write(f"You searched for: {search_query}")
 
@@ -95,4 +95,3 @@ elif sidebar_option == "Room Availability":
                 st.write(f"Failed to add room. Status code: {response.status_code}")
         except requests.RequestException as e:
             st.write(f"An error occurred: {e}")
-

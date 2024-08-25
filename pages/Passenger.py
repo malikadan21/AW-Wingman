@@ -54,7 +54,7 @@ st.title("Passengers")
 
 # Initialize the chat history and input field in session state
 if 'chat_history' not in st.session_state:
-    st.session_state.chat_history = [{"role": "api", "message": "Hello! How can I assist you today?"}]
+    st.session_state.chat_history = [{"role": "api", "message": "Hello! How can I assist you today?. <br> If you are a passenger, please enter your hotel booking Id you get via Text or email for further detail regarding your and/or your group's allotted stay"}]
 if 'user_message' not in st.session_state:
     st.session_state.user_message = ""
 
